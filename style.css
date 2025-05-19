@@ -1,0 +1,430 @@
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Varela+Round&display=swap');
+/* DM sans */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Varela+Round&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root{
+    --color-blue: rgba(1, 38, 222, 1);
+    --color-pink: rgba(255, 195, 160, 1);
+    --color-grey: rgba(245, 237, 231, 1);
+    --color-white: rgba(255, 255, 255, 1);
+    --color-transparent:  rgba(255, 255, 255, 0.25);
+    --color-dark-grey:  rgba(0, 0, 0, 0.35);
+
+}
+h1, h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+p, a{
+    font-family: "DM Sans", sans-serif;
+}
+.btn {
+    padding: 0.5rem 0;
+    text-align: center;
+}
+.btn a{
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    border: 1px solid var(--color-blue);
+    color: var(--color-blue);
+}
+.btn a:hover{
+    background: blue;
+    color: var(--color-white);
+}
+
+.top-bar{
+    background: var(--color-blue);
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    height: 4rem;
+}
+.top-bar p:nth-child(2){
+    background: var(--color-transparent);
+    color: var(--color-dark-grey);
+    padding: 0.7rem 5rem 0.7rem 1rem;
+    border-radius: 1rem;
+    border: 1px solid var(--color-white);
+}
+.top-bar a{
+    padding: 0.7rem 1.5rem;
+    background: var(--color-white);
+    color: black;
+    border-radius: 2rem;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--color-grey);
+}
+header .nav-bar img{
+    width: 25%;
+}
+header .nav-bar a{
+    padding: 1rem;
+    color: black;
+}
+header .options {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+header .options img{
+    width: 35%;
+}
+header .options a{
+    padding: 1rem;
+    color: black;
+}
+
+main{
+    background: var(--color-pink);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+main .main-left-side{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+}
+main .main-left-side h1{
+    font-size: 78px;
+}
+main .main-left-side p{
+    font-size: 18px;
+}
+main .main-left-side a{
+    width: 40%;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 1px solid black;
+    color: black;
+}
+main .main-left-side a:hover{
+    background: black;
+    color: var(--color-white);
+}
+main .main-right-side img{
+    width: 50vw;
+    border-radius: 1rem;
+    margin: 0.5rem;
+}
+
+
+section.options{
+    padding: 2rem 0;
+    background: var(--color-grey);
+}
+section.options h1 {
+    text-align: center;
+    font-size: 43px;
+}
+
+section.options .options {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 2rem 1rem;
+    gap: 1.5rem;
+}
+
+section.options .options .option{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+section.options .options .option img{
+    width: 8vw;
+}
+section.options .options .option h1{
+    font-size: 27px;
+}
+section.options .options .option p{
+    text-align: center;
+}
+
+section.bread{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: var(--color-grey);
+}
+section.bread .section-left-side img{
+    border-radius: 2rem;
+    padding: 1rem;
+}
+section.bread .section-right-side{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20%;
+}
+section.bread .section-right-side h1{
+    font-size: 40px;
+    padding: 0 1rem;
+}
+section.bread .section-right-side .btn{
+    text-align: start;
+    padding: 2rem 1rem;
+}
+
+section.bread-options {
+    background: var(--color-grey);
+    padding-bottom: 3rem;
+}
+section.bread-options > h1{
+    text-align: center;
+    font-size: 39px;
+    font-weight: 400;
+    padding: 1rem 0;
+}
+section.bread-options .options{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    padding: 0 2rem;
+}
+section.bread-options .options .option img{
+    width: 100%;
+    border-radius: 1rem;
+}
+section.bread-options .options .option h1{
+    font-size: 27px;
+} 
+section.bread-options .options .option div{
+    margin-top: 1.5rem;
+}
+section.bread-options .options .option div a{
+    padding: 1rem 2rem;
+    border: 1px solid var(--color-blue);
+    border-radius: 2rem;
+    color: var(--color-blue);
+}
+section.bread-options .options .option div a:hover{
+    background: var(--color-blue);
+    color: var(--color-white);
+}
+
+section.img {
+    margin-top: 2rem;
+}
+section.img img{
+    width: 100%;
+}
+
+article{
+    background: var(--color-grey);
+}
+article .options{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+article .options .option{
+    border: 1px solid black;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    margin: 2rem 1rem;
+}
+article .options .option img{
+    width: 100%;
+    border-radius: 2rem;
+}
+article .options .option h1{
+    font-size: 56px;
+    font-weight: 400;
+    padding: 1rem 0;
+}
+article .options .option p{
+    font-size: 18px;
+    padding-bottom: 1rem;
+    line-height: 28px;
+}
+
+article .articles{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 10%;
+}
+article .articles .article{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2rem;
+}
+article .articles .article img{
+    width: 40%;
+    border-radius: 2rem;
+}
+article .articles .article div{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 3rem;
+    gap: 2rem;
+}
+article .articles .article div h1{
+    font-size: 26px;
+}
+article .articles .article div a{
+    padding: 1rem 5rem;
+    color: black;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 2rem;
+}
+article .articles .article div a:hover{
+    background: black;
+    color: var(--color-white);
+}
+article .articles .article:nth-child(2) img{
+    margin-left: 10%;
+}
+hr{
+    margin-top: 1rem;
+}
+footer{
+    text-align: center;
+}
+footer > h1{
+    font-size: 43px;
+    padding: 2rem;
+}
+footer .photos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 5rem;
+}
+footer .photos img{
+    width: 20%;
+    border-radius: 2rem;
+}
+footer .form_contact{
+    background: var(--color-grey);
+}
+footer .form_contact .form h1{
+    font-size: 50px;
+}
+footer .form_contact .form h2{
+    font-size: 31px;
+}
+footer .form_contact .form p{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 10%;
+    border: 1px solid black;
+    border-radius: 1rem;
+    font-size: 17px;
+    background: var(--color-transparent);
+}
+footer .form_contact .contacts{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 2rem;
+    align-items: baseline;
+}
+footer .form_contact .contacts img{
+    width: 60%;
+}
+footer .form_contact .contacts .contact{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+footer .form_contact .contacts .contact h1{
+    font-size: 22px;
+    padding: 1rem 0;
+}
+footer .form_contact .contacts .contact p{
+    padding: 0.2rem 0;
+}
+
+
+@media screen and (max-width:1200px) {
+    .top-bar p{
+        font-size: 13px;
+    }
+    .top-bar p:nth-child(2){
+        padding: 0.7rem 3rem 0.7rem 1rem;
+    }
+    main .main-right-side img{
+        height: 70vh;
+        width: 50vw;
+    }
+    section.options .options{
+        grid-template-columns: repeat(2,1fr);
+    }
+    section.bread .section-left-side img{
+        width: 50vw;
+    }
+    section.bread .section-right-side h1{
+        padding: 1rem 1rem;
+    }
+    section.bread .section-right-side{
+        padding-top: 0;
+    }
+    article .options{
+        grid-template-columns: repeat(2,1fr);
+    }
+    article .articles .article img{
+        display: none;
+    }
+}
+@media screen and (max-width: 1020px) {
+    article .options{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width:900px) {
+    .top-bar p{
+        font-size: 10px;
+    }
+    main{
+        grid-template-columns: 1fr;
+    }
+    main .main-right-side {
+        display: none;
+    }
+    section.bread .section-right-side h1{
+        font-size: 30px;
+    }
+    article .articles .article img{
+        display: none;
+    }
+}
+@media screen and (max-width: 800px) {
+    .top-bar {
+        display: none;
+    }
+    section.options .options{
+        grid-template-columns: 1fr;
+    }
+    section.bread{
+        display: none;
+    }
+    section.bread-options .options{
+        grid-template-columns: 1fr;
+    }
+    footer .form_contact .contacts img{
+        width: 40%;
+    }
+    footer .form_contact .contacts{
+        grid-template-columns: 1fr;
+        padding: 0 30%;
+    }
+}
